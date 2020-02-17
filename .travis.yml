@@ -1,5 +1,5 @@
-language: swift
-osx_image: xcode10.2.1
+language: objective-c
+osx_image: xcode10.2
 xcode_project: MovieDB-HQ.xcodeproj
 xcode_scheme: MovieDB-HQ
-xcode_sdk: iphonesimulator11.4
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
