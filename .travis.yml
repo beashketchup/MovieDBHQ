@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10.2.1
+xcode_project: MovieDB-HQ.xcodeproj
+xcode_scheme: MovieDB-HQ
+xcode_sdk: iphonesimulator11.4
