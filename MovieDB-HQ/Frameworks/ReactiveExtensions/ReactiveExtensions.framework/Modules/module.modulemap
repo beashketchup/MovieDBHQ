@@ -1,0 +1,11 @@
+framework module ReactiveExtensions {
+  umbrella header "ReactiveExtensions.h"
+
+  export *
+  module * { export * }
+}
+
+module ReactiveExtensions.Swift {
+    header "ReactiveExtensions-Swift.h"
+    requires objc
+}

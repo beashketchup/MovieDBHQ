@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="Wvk-5d-Eea">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="v3m-QB-bh5" customClass="ResultViewController" customModule="MovieFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8W-Qc-J6p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PPA-8S-UDy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ACQ-0f-IKL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vcT-uF-x5u" firstAttribute="bottom" secondItem="PPA-8S-UDy" secondAttribute="bottom" id="LnE-y7-7Kb"/>
+                            <constraint firstItem="ACQ-0f-IKL" firstAttribute="leading" secondItem="vcT-uF-x5u" secondAttribute="leading" id="Nfh-Gj-9WV"/>
+                            <constraint firstItem="PPA-8S-UDy" firstAttribute="leading" secondItem="E8W-Qc-J6p" secondAttribute="leading" id="OmN-A8-8sP"/>
+                            <constraint firstItem="PPA-8S-UDy" firstAttribute="top" secondItem="E8W-Qc-J6p" secondAttribute="top" id="cBO-qj-aOL"/>
+                            <constraint firstAttribute="trailing" secondItem="PPA-8S-UDy" secondAttribute="trailing" id="eOS-i9-vxO"/>
+                            <constraint firstItem="ACQ-0f-IKL" firstAttribute="top" secondItem="vcT-uF-x5u" secondAttribute="top" id="eap-l1-01n"/>
+                            <constraint firstAttribute="bottom" secondItem="ACQ-0f-IKL" secondAttribute="bottom" id="hjR-7c-MUj"/>
+                            <constraint firstItem="vcT-uF-x5u" firstAttribute="trailing" secondItem="ACQ-0f-IKL" secondAttribute="trailing" id="poJ-oO-Mt3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vcT-uF-x5u"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="PPA-8S-UDy" id="knr-74-Lcv"/>
+                        <outlet property="movieTableView" destination="ACQ-0f-IKL" id="hv7-Is-LtH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTc-LL-2c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="48"/>
+        </scene>
+    </scenes>
+</document>
