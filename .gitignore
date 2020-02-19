@@ -21,7 +21,6 @@ DerivedData
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
-*.xcworkspace
 *.xcbkptlist
 
 ## Obj-C/Swift specific
